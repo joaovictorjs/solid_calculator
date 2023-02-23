@@ -1,0 +1,6 @@
+div.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  height: 270px;
+  grid-gap: 5px;
+}

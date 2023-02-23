@@ -1,0 +1,22 @@
+.key {
+  background-color: currentColor;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  font-weight: 500;
+  overflow: visible;
+  white-space: normal;
+}
+
+.key:hover {
+  background-color: currentColor;
+  box-shadow: 1px 1px 10px -3px currentColor;
+}
+
+.key:active {
+  background-color: currentColor;
+  opacity: 100%;
+  filter: contrast(115%);
+}

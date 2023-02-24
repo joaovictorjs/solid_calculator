@@ -4,8 +4,12 @@
   "outputfilename": "solid_calculator",
   "frontend:install": "npm install",
   "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
   "author": {
     "name": "joaovictorjs",
     "email": "skai7ami@gmail.com"
-  }
+  },
+"reloaddirs": "frontend/dist",
+"assetdir": "frontend/dist"
 }

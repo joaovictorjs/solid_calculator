@@ -22,30 +22,32 @@ var icon []byte
 func main() {
 	// Create an instance of the app structure
 	app := NewApp()
-	height, width := 375, 235
+	height, width := 440, 235
 
 	if runtime.GOOS == "windows" {
-		height, width = height + 39, width + 16;
+		height, width = height+39, width+16
 	}
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:             "Calculadora",
-		Width:             width,
-		Height:            height,
-		MinWidth:          width,
-		MinHeight:         height,
-		DisableResize:     true,
-		Fullscreen:        false,
-		AssetServer:       &assetserver.Options{
+		Title:         "Calculadora",
+		Width:         width,
+		Height:        height,
+		MinWidth:      width,
+		MinHeight:     height,
+		MaxWidth:      width,
+		MaxHeight:     height,
+		DisableResize: true,
+		Fullscreen:    false,
+		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},
-		LogLevel:          logger.DEBUG,
-		OnStartup:         app.startup,
-		OnDomReady:        app.domReady,
-		OnBeforeClose:     app.beforeClose,
-		OnShutdown:        app.shutdown,
-		WindowStartState:  options.Normal,
+		LogLevel:         logger.DEBUG,
+		OnStartup:        app.startup,
+		OnDomReady:       app.domReady,
+		OnBeforeClose:    app.beforeClose,
+		OnShutdown:       app.shutdown,
+		WindowStartState: options.Normal,
 		Bind: []interface{}{
 			app,
 		},

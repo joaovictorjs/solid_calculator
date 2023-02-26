@@ -1,30 +1,7 @@
-.prompt {
-  height: 75px;
-  width: 215px;
-  margin-bottom: 10px;
-  border: 1px solid #363636;
-  border-radius: 4px;
-  background-color: #eeeeee;
-  padding: 0px 10px 0px 10px;
-}
-
-.result,
-.input {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-}
-
-.result {
-  line-height: 45px;
-  height: 45px;
-  font-size: 13pt;
-  font-weight: bold;
-}
-
-.input {
-  line-height: 35px;
-  height: 35px;
+div.prompt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 150px;
+  width: 275px;
 }

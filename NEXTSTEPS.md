@@ -20,7 +20,7 @@ The next steps to complete the template are:
 
 You can test your template by running this command:
 
-`wails init -n test -t /home/joaovictorjs/programming/go/wails/solid/template`
+`wails init -n test -t /home/joaovictorjs/programming/go/wails/solid/ts/template`
 
 ### Checklist
 

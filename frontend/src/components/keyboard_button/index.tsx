@@ -9,6 +9,12 @@ export default function KeyboardButton(key: Key) {
   const [getKey, setKey] = createSignal(key);
 
   function onClick() {
+    if (getKey().value === "equals") {
+      setState("inputs", state.result.replace("= ", ""));
+      setState("display", state.result.replace("= ", ""));
+      return;
+    }
+
     setState("inputs", (prev) => {
       if (getKey().value === "clear") {
         setState("parenthesis", "(");

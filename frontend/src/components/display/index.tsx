@@ -5,7 +5,14 @@ import { createComputed } from "solid-js";
 export default function Display() {
   createComputed(() => {
     try {
-      setState("result", `= ${eval(state.inputs.toString())}`);
+      let result = eval(state.inputs.toString());
+
+      if (result.toString().includes(".")) {
+        const lenght = result.toString().split(".")[1].length;
+        result = parseFloat(result).toFixed(lenght > 1 ? 2 : 1);
+      }
+
+      setState("result", `= ${result}`);
     } catch (e) {}
   });
   return (

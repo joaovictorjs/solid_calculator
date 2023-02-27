@@ -1,6 +1,6 @@
 {
   "name": "solid_calculator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "scripts": {
     "start": "vite",
@@ -17,5 +17,5 @@
   "dependencies": {
     "solid-js": "^1.6.10"
   },
-  "author": ""
+  "author": "joaovictorjs"
 }

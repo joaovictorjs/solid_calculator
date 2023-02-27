@@ -5,3 +5,11 @@ div.prompt {
   height: 150px;
   width: 275px;
 }
+
+div.prompt:hover {
+  cursor: grab;
+}
+
+div.prompt:active {
+  cursor: grabbing;
+}

@@ -1,7 +1,13 @@
-import styles from './styles.module.css';
-import { state } from '../../stores/calculator_store';
+import styles from "./styles.module.css";
+import { setState, state } from "../../store/calculator_store";
+import { createComputed } from "solid-js";
 
 export default function Display() {
+  createComputed(() => {
+    try {
+      setState("result", `= ${eval(state.inputs.toString())}`);
+    } catch (e) {}
+  });
   return (
     <>
       <div class={styles.display}>

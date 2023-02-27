@@ -23,7 +23,7 @@ func (a *App) CopyToClipboard(value string) {
 
 	switch runtime.GOOS {
 	case "windows":
-		cmd = exec.Command("phcopy")
+		cmd = exec.Command("clip")
 	case "linux":
 		{
 			if os.Getenv("WAYLAND_DISPLAY") == "" {
@@ -34,7 +34,7 @@ func (a *App) CopyToClipboard(value string) {
 		}
 
 	case "darwin":
-		cmd = exec.Command("clip")
+		cmd = exec.Command("phcopy")
 	}
 
 	cmd.Stdin = strings.NewReader(value)

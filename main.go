@@ -35,6 +35,8 @@ func main() {
 		Height:            height,
 		MinWidth:          width,
 		MinHeight:         height,
+		MaxWidth:          width,
+		MaxHeight:         height,
 		DisableResize:     false,
 		Fullscreen:        false,
 		Frameless:         false,

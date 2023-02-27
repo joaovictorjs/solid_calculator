@@ -34,7 +34,7 @@ func (a *App) CopyToClipboard(value string) {
 		}
 
 	case "darwin":
-		cmd = exec.Command("phcopy")
+		cmd = exec.Command("pbcopy")
 	}
 
 	cmd.Stdin = strings.NewReader(value)

@@ -1,0 +1,34 @@
+.display {
+  height: 150px;
+  width: 275px;
+}
+
+.display.dark {
+  background-color: #121212;
+}
+
+.display.dark > * {
+  color: white;
+}
+
+.wrapper {
+  height: calc(100% - 40px);
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.result,
+.inputs {
+  width: 100%;
+  text-align: end;
+  height: auto;
+}
+
+.inputs {
+  font-size: 14pt;
+  font-weight: bold;
+}

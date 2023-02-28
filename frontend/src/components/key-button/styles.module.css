@@ -1,0 +1,36 @@
+.button {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.button,
+.button.operation {
+  border-radius: 2px;
+  /* transition: all 0.025s ease-in-out; */
+  cursor: pointer;
+  font-size: 11pt;
+}
+
+.button.dark {
+  color: white;
+}
+
+.button:hover,
+.button.operation:hover {
+  background-color: #c6c6c6;
+}
+
+.button.operation {
+  background-color: #d9d9d9;
+}
+
+.button.operation.dark {
+  background-color: #191919;
+}
+
+.button.dark:hover,
+.button.operation.dark:hover {
+  background-color: #161616;
+}

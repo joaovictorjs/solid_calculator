@@ -1,0 +1,17 @@
+.keyboard {
+  padding: 10px;
+  width: 275px;
+  height: 340px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  box-sizing: border-box;
+  box-shadow: -2px 1px 15px -2px #a6a6a6;
+}
+
+.keyboard.dark {
+  background-color: #242424;
+  box-shadow: -2px 1px 15px -2px black;
+}

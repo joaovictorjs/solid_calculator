@@ -21,7 +21,7 @@ var icon []byte
 func main() {
 	// Create an instance of the app structure
 	app := NewApp()
-	height, width := 470, 260
+	height, width := 490, 275
 
 	// Create application with options
 	err := wails.Run(&options.App{

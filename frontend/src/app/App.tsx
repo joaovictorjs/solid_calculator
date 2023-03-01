@@ -6,6 +6,11 @@ import { CopyToClipboard } from "../../wailsjs/go/main/App";
 
 export default function App() {
   document.addEventListener("keydown", async (event) => {
+    if (event.keyCode === 9) {
+      event.preventDefault();
+      return;
+    }
+
     if (event.ctrlKey && event.key === "c") {
       await CopyToClipboard(store.result.replace("= ", ""));
       return;

@@ -11,4 +11,30 @@
 .wrapper {
   height: calc(100% - 40px);
   width: 275px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: grab;
+}
+
+.wrapper:active {
+  cursor: grabbing;
+}
+
+.res,
+.exp {
+  height: auto;
+  width: 100%;
+  text-align: end;
+}
+
+.exp {
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.res.dark,
+.exp.dark {
+  color: var(--dark-text-color);
 }

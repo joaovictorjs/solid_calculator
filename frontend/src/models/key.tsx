@@ -3,5 +3,6 @@ export default interface Key {
   value: string;
   span: number;
   type: string;
+  shortcut: string;
   click: () => void;
 }

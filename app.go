@@ -58,7 +58,6 @@ func (a *App) ToggleTheme(theme string) {
 	}
 }
 
-// Greet returns a greeting for the given name
 func (a *App) CopyToClipboard(value string) {
 	cmd := exec.Command("", value)
 

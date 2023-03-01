@@ -10,5 +10,10 @@
     "name": "joaovictorjs",
     "email": "skai7ami@gmail.com"
   },
-  "obfuscated": true
+  "obfuscated": true,
+  "info": {
+    "productVersion": "0.0.3",
+    "companyName": "joaovictorjs",
+    "productName": "Solid Calculator"
+  }
 }

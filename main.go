@@ -60,6 +60,7 @@ func main() {
 			// DisableFramelessWindowDecorations: false,
 			WebviewUserDataPath: "",
 			ZoomFactor:          1.0,
+			Theme:               (*app.Theme).WindowsTheme,
 		},
 		// Mac platform specific options
 		Mac: &mac.Options{
@@ -71,7 +72,7 @@ func main() {
 				UseToolbar:                 false,
 				HideToolbarSeparator:       true,
 			},
-			Appearance:           mac.NSAppearanceNameDarkAqua,
+			Appearance:           (*app.Theme).MacTheme,
 			WebviewIsTransparent: true,
 			WindowIsTranslucent:  true,
 			About: &mac.AboutInfo{

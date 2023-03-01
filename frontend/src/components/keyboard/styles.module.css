@@ -1,0 +1,17 @@
+.kb {
+  padding: 10px;
+  height: 340px;
+  width: 275px;
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  overflow: hidden;
+  box-shadow: -2px 1px 15px 1px var(--shadow-color);
+}
+
+.kb.dark {
+  background-color: var(--dark-background-color);
+  box-shadow: -2px 1px 15px 1px var(--dark-shadow-color);
+}

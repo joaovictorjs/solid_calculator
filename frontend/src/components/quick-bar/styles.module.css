@@ -1,0 +1,47 @@
+.bar {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 275px;
+  padding: 0px 10px 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn img {
+  width: auto;
+  height: auto;
+}
+
+.theme,
+.back {
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.theme {
+  width: 30px;
+  border-radius: 50px;
+}
+
+.back {
+  width: 40px;
+  border-radius: 2px;
+}
+
+.theme:hover,
+.back:hover {
+  background-color: var(--hover-color);
+}
+
+.theme.dark:hover,
+.back.dark:hover {
+  background-color: var(--dark-hover-color);
+}

@@ -1,0 +1,31 @@
+.btn,
+.opt {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 11pt;
+}
+
+.opt {
+  background-color: var(--button-color);
+}
+
+.btn:hover,
+.opt:hover {
+  background-color: var(--hover-color);
+}
+
+.btn.dark {
+  color: var(--dark-text-color);
+}
+
+.opt.dark {
+  background-color: var(--dark-button-color);
+}
+
+.btn.dark:hover,
+.opt.dark:hover {
+  background-color: var(--dark-hover-color);
+}

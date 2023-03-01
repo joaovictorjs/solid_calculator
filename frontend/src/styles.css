@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/inter.ttf');
+}
+
+:root {
+  --background-color: white;
+  --surface-color: #eeeeee;
+  --button-color: #e1e1e1;
+  --hover-color: #c6c6c6;
+  --shadow-color: #a6a6a6;
+
+  --dark-background-color: #242424;
+  --dark-surface-color: #121212;
+  --dark-button-color: rgba(46, 46, 46, 1);
+  --dark-hover-color: rgba(56, 56, 56, 1);
+  --dark-shadow-color: #060606;
+
+  --dark-text-color: #eeeeee;
+}
+
+* {
+  font-family: 'Inter';
+  height: 1vh;
+  width: 1vw;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-user-focus: none;
+}
